@@ -1,3 +1,3 @@
-module github.com/AlanLang/go-qbittorrent/qbt
+module github.com/AlanLang/qbt
 
 go 1.15
