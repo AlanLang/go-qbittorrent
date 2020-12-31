@@ -78,8 +78,8 @@ func (client *Client) GetConnectionStatus() bool {
 	return true
 }
 
-// ChangeConfig 修改配置
-func (client *Client) ChangeConfig(c Config) {
+// SetConfig 修改配置
+func (client *Client) SetConfig(c Config) {
 	client.config = c
 }
 
