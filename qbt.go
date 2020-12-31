@@ -78,6 +78,16 @@ func (client *Client) GetConnectionStatus() bool {
 	return true
 }
 
+// ChangeConfig 修改配置
+func (client *Client) ChangeConfig(c Config) {
+	client.config = c
+}
+
+// GetConfig 获取配置
+func (client *Client) GetConfig() Config {
+	return client.config
+}
+
 //NewClient creates a new client connection to qbittorrent
 func newClient(url string, username string, password string) *Client {
 	client := &Client{}
