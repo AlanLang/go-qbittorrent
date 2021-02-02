@@ -35,7 +35,7 @@ func (client *Client) List() (Sync, error) {
 	params := make(map[string]string)
 	params["rid"] = "0"
 
-	resp, err := client.get("api/v2/sync/maindata", params)
+	resp, err := client.get("api/v2/sync/maindata?rid=0", params)
 	if err != nil {
 		return s, err
 	}

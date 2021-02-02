@@ -74,6 +74,7 @@ type Sync struct {
 		UpInfoSpeed       int    `json:"up_info_speed"`
 		UpRateLimit       int    `json:"up_rate_limit"`
 		UseAltSpeedLimits bool   `json:"use_alt_speed_limits"`
+		FreeSpaceOnDIsk   int    `sjon:"free_space_on_disk"`
 	} `json:"server_state"`
 	Torrents map[string]Torrent `json:"torrents"`
 }
